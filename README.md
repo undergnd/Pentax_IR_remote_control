@@ -5,7 +5,7 @@ PENTAX_K30_REMOTE_CONTROLLER
 
 PROGRAM FUNCTION
 
-The project goal is to allow remote control for Pentax K-30 camera.
+The project's goal is to allow remote control for Pentax K-30 camera.
 
 RESULTS
 
