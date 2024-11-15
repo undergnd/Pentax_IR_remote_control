@@ -9,7 +9,7 @@ The project's goal is to allow remote control for Pentax K-30 camera.
 
 RESULTS
 
-The remote controller is able to send focus and shooter commands to Pentax camera with a range of a few meters. In standby it consumes ess than 1 uA so it allows to use small 2032 battery.
+The remote controller is able to send focus and shooter commands to Pentax camera with a range of a few meters. In standby it consumes less than 1 uA so it allows to use small 2032 battery. It has been tested with Pentax K-30 camera.
 
 A SHORT DESCRIPTION OF HOW THE PROGRAM WORKS
 
