@@ -24,8 +24,8 @@ PA4 - IR diode output
 PA0 - LED output
 
 
-On pressing switch 1 low level is present on RESET pin and high level on PA15. After reliesing switch 1, RESET comes back to high and uC starts. However on PA15 high level is kept for some time, what is determined RC timing circuit.
-On pressing switch 2 low level is present on RESET pin and high level on PA14. After reliesing switch 2, RESET comes back to high and uC starts. However on PA14 high level is kept for some time, what is determined RC timing circuit.
+On pressing switch 1 low level is present on RESET pin and high level on PA15. After reliesing switch 1, RESET comes back to high and uC starts. However on PA15 high level is kept for some time, what is determined by RC timing circuit.
+On pressing switch 2 low level is present on RESET pin and high level on PA14. After reliesing switch 2, RESET comes back to high and uC starts. However on PA14 high level is kept for some time, what is determined by RC timing circuit.
 uC tests the PA14 and PA15 pins after reset and according to above procedure it recignized which switch has been pressed. Respectively it sends command focus or shooter.
 The commads base 38kHz i gnerated by TIM1 in PWM mode. The respective signale sequences are build by simple LL_mDelay function.
 For focus we have:
