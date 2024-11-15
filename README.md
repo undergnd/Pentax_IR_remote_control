@@ -16,9 +16,13 @@ A SHORT DESCRIPTION OF HOW THE PROGRAM WORKS
 All uC related names are valid for BlueNRG-LP controller.
 
 switch 1 -> PA15 + RESET - triggers focus command 
+
 switch 2 -> PA14 + RESET - triggers shooter command
+
 PA4 - IR diode output
+
 PA0 - LED output
+
 
 On pressing switch 1 low level is present on RESET pin and high level on PA15. After reliesing switch 1, RESET comes back to high and uC starts. However on PA15 high level is kept for some time, what is determined RC timing circuit.
 On pressing switch 2 low level is present on RESET pin and high level on PA14. After reliesing switch 2, RESET comes back to high and uC starts. However on PA14 high level is kept for some time, what is determined RC timing circuit.
