@@ -9,7 +9,7 @@ The project's goal is to allow remote control for Pentax K-30 camera.
 
 RESULTS
 
-The remote controller is able to send focus and shooter commands to Pentax camera with a range of a few meters. In standby it consumes less than 1 uA so it allows to use small 2032 battery. It has been tested with Pentax K-30 camera.
+The remote controller is able to send focus and shutter commands to Pentax camera with a range of a few meters. In standby it consumes less than 1 uA so it allows to use small 2032 battery. It has been tested with Pentax K-30 camera.
 
 A SHORT DESCRIPTION OF HOW THE PROGRAM WORKS
 
@@ -17,7 +17,7 @@ All uC related names are valid for BlueNRG-LP controller.
 
 switch 1 -> PA15 + RESET - triggers focus command 
 
-switch 2 -> PA14 + RESET - triggers shooter command
+switch 2 -> PA14 + RESET - triggers shutter command
 
 PA4 - IR diode output
 
@@ -26,13 +26,13 @@ PA0 - LED output
 
 On pressing switch 1 low level is present on RESET pin and high level on PA15. After reliesing switch 1, RESET comes back to high and uC starts. However on PA15 high level is kept for some time, what is determined by RC timing circuit.
 On pressing switch 2 low level is present on RESET pin and high level on PA14. After reliesing switch 2, RESET comes back to high and uC starts. However on PA14 high level is kept for some time, what is determined by RC timing circuit.
-uC tests the PA14 and PA15 pins after reset and according to above procedure it recignized which switch has been pressed. Respectively it sends command focus or shooter.
+uC tests the PA14 and PA15 pins after reset and according to above procedure it recignized which switch has been pressed. Respectively it sends command focus or shutter.
 The commads base 38kHz is gnerated by TIM1 in PWM mode. The respective signale sequences are build by simple LL_mDelay function.
 
 For focus we have:
 11111111111110001010101010100010
 
-For shooter:
+For shutter:
 111111111111100010101010101010
 
 where: 
