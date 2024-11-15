@@ -39,3 +39,6 @@ where:
 
 - 1 means 1 ms 38kHz pulse
 - 0 means 1 ms delay (no 38kHz pulse)
+
+
+
